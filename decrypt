@@ -1,0 +1,9 @@
+#!/bin/bash
+
+rot="/student/csc209/a1/rot"
+
+for i in `seq 1 25` 
+do 
+    echo $* | $rot $i
+done
+

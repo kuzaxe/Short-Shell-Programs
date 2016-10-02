@@ -1,0 +1,15 @@
+#!/bin/bash
+
+permute="/student/csc209/a1/permute" 
+ispal="/student/csc209/a1/ispalindrome" 
+
+$permute $* | 
+{
+while read x
+do 
+    if $ispal "$x"
+    then 
+        echo $x
+    fi 
+done
+}
